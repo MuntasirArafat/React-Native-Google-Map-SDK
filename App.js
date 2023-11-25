@@ -11,7 +11,7 @@ import MapView, {Marker, Polyline} from 'react-native-maps';
 import Geolocation from 'react-native-geolocation-service';
 import Geocoder from 'react-native-geocoding';
 
-Geocoder.init('AIzaSyB9o7FWHxz3Z2UIaVr-i8NSVk8dIVWVAsE');
+Geocoder.init('GOOGLE_MAP_API_KEY');
 
 const App = () => {
   const [currentLocation, setCurrentLocation] = useState(null);
