@@ -13,7 +13,7 @@ Add your API key to your manifest file ```(android/app/src/main/AndroidManifest.
 
 # Google Play Services conflicting issues with other modules
 
-In case you have multiple modules using the same Google Play Services dependencies (such as react-native-onesignal), you can exclude the conflicting dependencies from the modules and import the Google Play Services dependencies in the project-wide ```build.gradle``` file like the following example:
+In case you have multiple modules using the same Google Play Services dependencies ```(such as react-native-onesignal)```, you can exclude the conflicting dependencies from the modules and import the Google Play Services dependencies in the project-wide ```build.gradle``` file like the following example:
 ```
   implementation(project(':react-native-onesignal')){
       exclude group: 'com.google.android.gms'
