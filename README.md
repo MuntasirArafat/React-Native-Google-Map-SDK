@@ -29,7 +29,7 @@ Add your Google Maps API key to the `AndroidManifest.xml` file located at `andro
 
 ## 3. Resolve Google Play Services Conflicts
 
-In case you have multiple modules using the same Google Play Services dependencies '''(such as react-native-onesignal)''' ,you can exclude the conflicting dependencies from the modules and import the Google Play Services dependencies in the project-wide '''android/app/build.gradle''' file like the following example:
+In case you have multiple modules using the same Google Play Services dependencies **(such as react-native-onesignal)** ,you can exclude the conflicting dependencies from the modules and import the Google Play Services dependencies in the project-wide '''android/app/build.gradle''' file like the following example:
 
 ```
   implementation(project(':react-native-onesignal')){
